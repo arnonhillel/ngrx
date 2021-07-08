@@ -1,0 +1,52 @@
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+    <button class="btn btn-dark" (click)="dashboard()"> Go To Dashboard</button>
+</div>
+<div class="spotify-container" fxLayout="column" fxLayoutAlign="space-evenly stretch" style="padding: 35px;">
+    <div class="spotify-search-container">
+        <form [formGroup]="addCustomerFormGroup" style="" novalidate fxLayout="row"
+            fxLayoutAlign="space-between center">
+            <div fxLayout="row" fxLayoutAlign="center center" style="width: 50%; border: solid black 1px; ">
+                <h1>Add Customer</h1>
+                <div class="input-container">
+                    <input class="input-field"
+                        style="padding-left:40px;"
+                        type="text" autocomplete="off" formControlName="firstName" id="firstName" class="form-control"
+                        placeholder="first Name" autofocus="">
+                </div>
+                <div class="input-container">
+                    <input class="input-field"
+                        style=" padding-left:40px;"
+                        type="text" autocomplete="off" formControlName="lastName" id="lastName" class="form-control"
+                        placeholder="last Name" autofocus="">
+                </div>
+                <div class="input-container">
+                    <input class="input-field"
+                        style=" padding-left:40px;"
+                        type="number" autocomplete="off" formControlName="age" id="age" class="form-control"
+                        placeholder="age" autofocus="">
+                </div>
+                <div class="input-container">
+                    <input class="input-field"
+                        style=" padding-left:40px;"
+                        type="text" autocomplete="off" formControlName="phoneNumber" id="phoneNumber"
+                        class="form-control" placeholder="phone Number" autofocus="">
+                </div>
+                <div class="input-container">
+                    <input class="input-field"
+                        style="padding-left:40px;"
+                        type="textv" autocomplete="off" formControlName="address" id="address" class="form-control"
+                        placeholder="Address" autofocus="">
+                </div>
+
+                <div>
+                    <button class="btn btn-dark" style="margin-right: 15px;" (click)="addCustomer()">Save</button>
+
+                    <button class="btn btn-dark" (click)="resetCustomer()">Cancel</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+
+</div>

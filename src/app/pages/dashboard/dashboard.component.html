@@ -1,0 +1,21 @@
+<button class="btn btn-dark" (click)="addNew()"> Go To customer</button>
+
+
+<div *ngFor="let item of allCustomer" style="border: solid black 1px; box-shadow: inset 0 0 5px grey;
+  border-radius: 10px; width: fit-content;">
+  <div style="border: solid black 2px;">
+    <div style="border: solid black 1px;">
+      <span><b> Name: </b>{{item.first_name}} {{item.last_name}}</span>
+    </div>
+    <div style="">
+      <span><b> age: </b>{{item.age}}</span>
+    </div>
+    <div style="">
+      <span><b> Phone: </b>{{item.phone}} </span>
+    </div>
+    <div style="">
+      <span><b> Address: </b>{{item.address}}</span>
+    </div>
+  </div>
+
+</div>
